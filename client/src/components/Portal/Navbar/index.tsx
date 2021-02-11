@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <div className="title ml-4"> nav</div>
-        </a>
+    <nav
+      className="navbar my-4 is-mobile"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      {/* <div className="navbar-brand">
 
         <a
           role="button"
@@ -20,26 +21,28 @@ const Navbar = () => {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
-      </div>
+      </div> */}
 
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <Link to="/portal/staff" className="navbar-item">
-            Shift
-          </Link>
-          <Link to="/portal/events" className="navbar-item">
-            Events
-          </Link>
-          <Link to="/portal/schedule" className="navbar-item">
-            Schedule
-          </Link>
-          <Link to="/portal/incident" className="navbar-item">
-            Incident
-          </Link>
+      <div id="navbarBasicExample" className="navbar-menu is-mobile">
+        <div className="navbar-start is-mobile">
+          <div className="navbar-brand px-2">
+            <Link to="/portal/events" className="navbar-item">
+              Events
+            </Link>
+            <Link to="/portal/staff" className="navbar-item is-mobile">
+              Shift
+            </Link>
 
-          <Link to="/portal/docs" className="navbar-item">
-            Documentation
-          </Link>
+            <Link to="/portal/schedule" className="navbar-item">
+              Schedule
+            </Link>
+            <Link to="/portal/incident" className="navbar-item">
+              Incident
+            </Link>
+            <Link to="/portal/docs" className="navbar-item">
+              Documentation
+            </Link>
+          </div>
         </div>
 
         <div className="navbar-end">
@@ -48,12 +51,21 @@ const Navbar = () => {
               <a className="navbar-link">Admin</a>
 
               <div className="navbar-dropdown">
-                <Link to="/portal/management" className="navbar-item">Management</Link>
-                <Link to="/portal/comptrolling" className="navbar-item">Comptrolling</Link>
-                <Link to="/portal/admin/scheduleadmin" className="navbar-item">Schedules Admin</Link>
-                <Link to="/portal/admin/eventsadmin" className="navbar-item">Events Admin</Link>
-                <Link to="/portal/admin/employeeadmin" className="navbar-item">Employee Admin</Link>
-
+                <Link to="/portal/management" className="navbar-item">
+                  Management
+                </Link>
+                <Link to="/portal/comptrolling" className="navbar-item">
+                  Comptrolling
+                </Link>
+                <Link to="/portal/admin/scheduleadmin" className="navbar-item">
+                  Schedules Admin
+                </Link>
+                <Link to="/portal/admin/eventsadmin" className="navbar-item">
+                  Events Admin
+                </Link>
+                <Link to="/portal/admin/employeeadmin" className="navbar-item">
+                  Employee Admin
+                </Link>
 
                 <a className="navbar-item">Report an issue</a>
               </div>
