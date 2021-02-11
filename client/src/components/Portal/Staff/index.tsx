@@ -68,7 +68,13 @@ const Staff: (props: StaffProps) => JSX.Element = (props: StaffProps) => {
       ) : (
         <>
           <div className="card staff-input-form">
-            <div className="staff-title">
+            <div className="staff-title is-row">
+            <figure className="image is-128x128">
+                <img
+                  className="is-rounded"
+                  src="https://bulma.io/images/placeholders/128x128.png"
+                />
+              </figure>
               Hello {firstName} {lastName}!
             </div>
             <div className="staff-form-head">
@@ -99,7 +105,7 @@ const Staff: (props: StaffProps) => JSX.Element = (props: StaffProps) => {
             />
 
             <label className="checkbox">
-              <input type="checkbox" />  &nbsp;I agree to the required
+              <input type="checkbox" /> &nbsp;I agree to the required
               <a href="#"> &nbsp;terms and conditions</a> for employment.
             </label>
             <div className="staff-button-div">
