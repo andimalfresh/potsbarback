@@ -1,4 +1,5 @@
-# Pots Bak||Bar
+# Azure-MERN-Boilerplate
+A very basic boilerplate for an Azure ready MERN app
 
 ## About
 Application for Potbellies sales and inventory management 
