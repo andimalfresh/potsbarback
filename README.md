@@ -1,6 +1,8 @@
 # Azure-MERN-Boilerplate
 A very basic boilerplate for an Azure ready MERN app
 
+![Build and deploy Node.js app to Azure Web App - potsbarbak](https://github.com/freddysilber/potsbarback/workflows/Build%20and%20deploy%20Node.js%20app%20to%20Azure%20Web%20App%20-%20potsbarbak/badge.svg)
+
 ## About
 Application for Potbellies sales and inventory management 
 
